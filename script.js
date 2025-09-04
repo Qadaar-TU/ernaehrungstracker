@@ -58,5 +58,16 @@ document.getElementById('food-form').addEventListener('submit', function(event) 
     event.target.reset();
 });
 
+document.getElementById('clear-data').addEventListener('click', function() {
+    foodList.length = 0;
+    totals.calories = 0;
+    totals.protein = 0;
+    totals.carbs = 0;
+    totals.fat = 0;
+    localStorage.removeItem('foodList');
+    localStorage.removeItem('totals');
+    renderData();
+});
+
 // Expose foodList for potential further manipulation
 window.foodList = foodList;
