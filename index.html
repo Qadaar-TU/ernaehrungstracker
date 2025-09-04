@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nutrition Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Nutrition Tracker</h1>
+    <form id="food-form">
+        <input type="text" id="name" placeholder="Food Name" required>
+        <input type="number" id="calories" placeholder="Calories" required>
+        <input type="number" id="protein" placeholder="Protein" required>
+        <input type="number" id="carbs" placeholder="Carbs" required>
+        <input type="number" id="fat" placeholder="Fat" required>
+        <button type="submit">Add Food</button>
+    </form>
+
+    <table id="foods-table">
+        <thead>
+            <tr>
+                <th>Food</th>
+                <th>Calories</th>
+                <th>Protein</th>
+                <th>Carbs</th>
+                <th>Fat</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th id="total-calories">0</th>
+                <th id="total-protein">0</th>
+                <th id="total-carbs">0</th>
+                <th id="total-fat">0</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
