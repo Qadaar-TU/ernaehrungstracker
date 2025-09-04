@@ -22,3 +22,28 @@ form input {
 #foods-table tfoot th {
     font-weight: bold;
 }
+
+#foods-table th:nth-child(1),
+#foods-table td:nth-child(1) {
+    background-color: #f2f2f2;
+}
+
+#foods-table th:nth-child(2),
+#foods-table td:nth-child(2) {
+    background-color: #e3f2fd;
+}
+
+#foods-table th:nth-child(3),
+#foods-table td:nth-child(3) {
+    background-color: #fff3e0;
+}
+
+#foods-table th:nth-child(4),
+#foods-table td:nth-child(4) {
+    background-color: #e8f5e9;
+}
+
+#foods-table th:nth-child(5),
+#foods-table td:nth-child(5) {
+    background-color: #fce4ec;
+}
