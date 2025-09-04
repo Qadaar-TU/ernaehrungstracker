@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ernährungstracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ernährungstracker</h1>
+    <form id="food-form">
+        <input type="text" id="food-name" placeholder="Food" required>
+        <input type="number" id="food-calories" placeholder="Calories" required>
+        <button type="submit">Add</button>
+    </form>
+    <button id="reset-btn">Reset</button>
+    <table id="food-table">
+        <thead>
+            <tr>
+                <th>Food</th>
+                <th>Calories</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div id="total">Total Calories: <span id="total-calories">0</span></div>
+    <script src="script.js"></script>
+</body>
+</html>
