@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ernährungstracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ernährungstracker</h1>
+    <form id="entry-form">
+        <input id="food" placeholder="Lebensmittel" required>
+        <input id="calories" type="number" placeholder="Kalorien" required>
+        <input id="protein" type="number" placeholder="Protein" required>
+        <input id="carbs" type="number" placeholder="Kohlenhydrate" required>
+        <input id="fat" type="number" placeholder="Fett" required>
+        <button type="submit">Hinzufügen</button>
+    </form>
+    <table id="entries">
+        <thead>
+            <tr>
+                <th>Lebensmittel</th>
+                <th>Kalorien</th>
+                <th>Protein</th>
+                <th>Kohlenhydrate</th>
+                <th>Fett</th>
+                <th>Aktionen</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+            <tr>
+                <th>Summe</th>
+                <th id="total-calories">0</th>
+                <th id="total-protein">0</th>
+                <th id="total-carbs">0</th>
+                <th id="total-fat">0</th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
