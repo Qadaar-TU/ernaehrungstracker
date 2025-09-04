@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ernährungstracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Ernährungstracker</h1>
+  <form id="food-form">
+    <input type="text" id="food-name" placeholder="Food Name" required />
+    <input type="number" id="calories" placeholder="Calories" required />
+    <input type="number" id="protein" placeholder="Protein (g)" required />
+    <input type="number" id="carbs" placeholder="Carbohydrates (g)" required />
+    <input type="number" id="fats" placeholder="Fats (g)" required />
+    <button type="submit">Add Food</button>
+  </form>
+
+  <table id="food-table">
+    <thead>
+      <tr>
+        <th>Food Name</th>
+        <th>Calories</th>
+        <th>Protein (g)</th>
+        <th>Carbohydrates (g)</th>
+        <th>Fats (g)</th>
+      </tr>
+    </thead>
+    <tbody id="food-table-body"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
